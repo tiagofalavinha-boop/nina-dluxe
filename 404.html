@@ -3,19 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
     <title>Nina D’luxe</title>
     <script>
-      // Redireciona qualquer caminho do GitHub Pages para a vitrine.
-      var base = "/nina-dluxe/";
-      if (!location.pathname.startsWith(base)) {
-        location.replace(base);
-      } else {
-        location.replace(base);
-      }
+      // Qualquer endereço que não existe volta para a vitrine.
+      location.replace("/");
     </script>
-    <meta http-equiv="refresh" content="0; url=./" />
+    <meta http-equiv="refresh" content="0; url=/" />
   </head>
   <body>
-    <p><a href="./">Voltar para Nina D’luxe</a></p>
+    <p><a href="/">Voltar para Nina D’luxe</a></p>
   </body>
 </html>

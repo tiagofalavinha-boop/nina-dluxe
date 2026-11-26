@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="theme-color" content="#f3f1ee" />
+    <title>Área da Nina — Nina D’luxe</title>
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="admin.css?v=1" />
+  </head>
+  <body>
+    <!-- ENTRAR -->
+    <section class="tela" id="tela-entrar" hidden>
+      <div class="caixa">
+        <img class="logo" src="../logo.webp" alt="Nina D’luxe" width="900" height="542" />
+        <h1>Área da Nina</h1>
+        <p class="ajuda">Digite sua senha para editar os perfumes do site.</p>
+        <form id="form-entrar" autocomplete="on">
+          <input type="text" name="username" value="nina" autocomplete="username" hidden />
+          <label class="campo">
+            <span>Senha</span>
+            <input id="senha" type="password" autocomplete="current-password" required />
+          </label>
+          <label class="marcar">
+            <input id="lembrar" type="checkbox" checked />
+            <span>Manter conectada neste celular</span>
+          </label>
+          <button class="botao botao--principal" type="submit" id="botao-entrar">Entrar</button>
+          <p class="erro" id="erro-entrar" role="alert" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- AINDA NÃO CONFIGURADO / CONFIGURAR ACESSO -->
+    <section class="tela" id="tela-configurar" hidden>
+      <div class="caixa">
+        <img class="logo" src="../logo.webp" alt="Nina D’luxe" width="900" height="542" />
+        <h1>Configurar acesso</h1>
+        <p class="ajuda" id="configurar-aviso">
+          A área ainda não foi configurada. Cole abaixo o token do GitHub (só deste site) e escolha a senha da Nina.
+          O token fica guardado cifrado com essa senha.
+        </p>
+        <form id="form-configurar" autocomplete="off">
+          <label class="campo">
+            <span>Token do GitHub</span>
+            <input id="cfg-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…" required />
+          </label>
+          <label class="campo">
+            <span>Senha da Nina (mínimo 10 caracteres)</span>
+            <input id="cfg-senha" type="password" autocomplete="new-password" minlength="10" required />
+          </label>
+          <label class="campo">
+            <span>Repita a senha</span>
+            <input id="cfg-senha2" type="password" autocomplete="new-password" minlength="10" required />
+          </label>
+          <button class="botao botao--principal" type="submit">Salvar acesso</button>
+          <p class="erro" id="erro-configurar" role="alert" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- LISTA -->
+    <section class="tela" id="tela-lista" hidden>
+      <header class="topo">
+        <div class="topo__linha">
+          <h1 class="topo__titulo">Perfumes</h1>
+          <button class="botao-texto" type="button" id="botao-menu" aria-haspopup="true">Mais ▾</button>
+        </div>
+        <div class="menu" id="menu" hidden>
+          <a class="menu__item" href="../" target="_blank" rel="noopener">Ver o site</a>
+          <button class="menu__item" type="button" id="botao-trocar-senha">Trocar senha</button>
+          <button class="menu__item" type="button" id="botao-recarregar">Recarregar lista</button>
+          <button class="menu__item menu__item--perigo" type="button" id="botao-sair">Sair deste celular</button>
+        </div>
+        <input id="busca" class="busca" type="search" placeholder="Buscar perfume ou marca…" autocomplete="off" spellcheck="false" />
+        <div class="filtros" role="group" aria-label="Filtrar">
+          <button type="button" class="filtro is-ativo" data-filtro="todos">Todos</button>
+          <button type="button" class="filtro" data-filtro="sem-preco">Sem preço</button>
+          <button type="button" class="filtro" data-filtro="sem-foto">Sem foto</button>
+          <button type="button" class="filtro" data-filtro="esgotados">Esgotados</button>
+        </div>
+        <p class="contagem" id="contagem" aria-live="polite"></p>
+      </header>
+      <ul class="lista" id="lista"></ul>
+      <button class="botao botao--principal botao--flutuante" type="button" id="botao-novo">+ Novo perfume</button>
+    </section>
+
+    <!-- EDITAR -->
+    <section class="tela" id="tela-editar" hidden>
+      <header class="topo topo--editar">
+        <button class="botao-texto" type="button" id="botao-voltar">‹ Voltar</button>
+        <h1 class="topo__titulo" id="editar-titulo">Editar</h1>
+      </header>
+      <form id="form-editar" class="editar" autocomplete="off" novalidate>
+        <div class="foto">
+          <div class="foto__quadro" id="foto-quadro">
+            <img id="foto-img" alt="" hidden />
+            <span class="foto__vazia" id="foto-vazia">Sem foto</span>
+          </div>
+          <label class="botao botao--secundario">
+            <input id="foto-arquivo" type="file" accept="image/*" hidden />
+            <span id="foto-botao-texto">📷 Tirar ou escolher foto</span>
+          </label>
+          <button class="botao-texto botao-texto--perigo" type="button" id="foto-remover" hidden>Tirar a foto do site</button>
+        </div>
+
+        <label class="campo">
+          <span>Nome do perfume</span>
+          <input id="ed-nome" type="text" required autocapitalize="words" />
+        </label>
+        <label class="campo">
+          <span>Marca</span>
+          <input id="ed-marca" type="text" list="marcas" autocapitalize="words" />
+          <datalist id="marcas"></datalist>
+        </label>
+        <label class="campo">
+          <span>Preço de venda (o que o cliente paga)</span>
+          <div class="preco">
+            <span class="preco__rs">R$</span>
+            <input id="ed-preco" type="text" inputmode="decimal" placeholder="Vazio = “Consulte”" />
+          </div>
+          <small>Deixe vazio para aparecer “Consulte”. Nunca coloque o preço de custo.</small>
+        </label>
+        <label class="campo">
+          <span>Tamanho em ml (opcional)</span>
+          <input id="ed-ml" type="text" inputmode="numeric" placeholder="Ex.: 100" />
+        </label>
+
+        <fieldset class="disponivel">
+          <legend>No site aparece como</legend>
+          <div class="disponivel__opcoes">
+            <label><input type="radio" name="ed-disp" value="sim" /><span>Disponível</span></label>
+            <label><input type="radio" name="ed-disp" value="nao" /><span>Esgotado</span></label>
+          </div>
+        </fieldset>
+
+        <p class="erro" id="erro-editar" role="alert" hidden></p>
+        <button class="botao botao--principal" type="submit" id="botao-salvar">Salvar e publicar</button>
+        <button class="botao botao--perigo" type="button" id="botao-excluir" hidden>Excluir este perfume</button>
+      </form>
+    </section>
+
+    <!-- AVISO / CARREGANDO -->
+    <div class="aviso" id="aviso" hidden role="status" aria-live="polite">
+      <div class="aviso__caixa">
+        <div class="aviso__giro" id="aviso-giro"></div>
+        <p class="aviso__texto" id="aviso-texto"></p>
+        <button class="botao botao--principal" type="button" id="aviso-ok" hidden>OK</button>
+      </div>
+    </div>
+
+    <script src="cripto.js?v=1"></script>
+    <script src="admin.js?v=1"></script>
+  </body>
+</html>

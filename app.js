@@ -196,7 +196,7 @@
   aplicarVista(lerVista());
   aplicarLinksGerais();
 
-  fetch("produtos.json", { cache: "no-store" })
+  fetch("produtos.json?t=" + Date.now(), { cache: "no-store" })
     .then((r) => {
       if (!r.ok) throw new Error("Falha ao carregar produtos");
       return r.json();

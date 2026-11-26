@@ -2,10 +2,41 @@
 
 Site público para apresentar os perfumes da Nina D’luxe e receber pedidos pelo WhatsApp.
 
-Endereço do site (depois de publicado):
-[https://tiagofalavinha-boop.github.io/nina-dluxe/](https://tiagofalavinha-boop.github.io/nina-dluxe/)
+Endereço do site: [https://ninadluxe.com.br](https://ninadluxe.com.br)
 
 Os preços de venda ainda não estão preenchidos: o site mostra **Consulte**. Quando vocês quiserem exibir o valor, basta editar o arquivo de produtos, como explicado abaixo. **Não coloque preço de compra** neste site — só o preço de venda, se for mostrar.
+
+---
+
+## Área da Nina (jeito mais fácil de editar)
+
+Endereço: **https://ninadluxe.com.br/admin/** (não aparece no site nem no Google).
+
+Pelo celular, com a senha da Nina, dá para:
+
+- buscar um perfume e mudar **preço de venda**, **nome**, **marca**, **tamanho (ml)** e **Disponível/Esgotado**;
+- **tirar ou escolher uma foto** (ela é diminuída e convertida sozinha);
+- **adicionar** e **excluir** perfumes.
+
+Cada **Salvar e publicar** aparece no site em 1 a 2 minutos.
+
+### Como o acesso funciona (para o Tiago)
+
+A área grava direto no GitHub usando um *token* (fine-grained) que só tem acesso a este repositório.
+O token fica no arquivo `admin/credenciais.json`, **cifrado** com a senha da Nina
+(AES-GCM 256, chave derivada com PBKDF2-SHA256 de 600 mil iterações). Sem a senha, o arquivo não serve para nada.
+
+Para configurar ou renovar o token:
+
+1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token.
+2. Repository access: **Only select repositories** → `nina-dluxe`.
+3. Permissions → Repository permissions → **Contents: Read and write** (Metadata: Read-only entra sozinho). Nada mais.
+4. Expiração: a maior possível. Quando vencer, a área avisa “O acesso expirou”; é só gerar outro e repetir o passo 5.
+5. Abra **https://ninadluxe.com.br/admin/?configurar**, cole o token, escolha a senha (mín. 10 caracteres) e salve.
+   (Alternativa no computador: `NINA_TOKEN=... NINA_SENHA=... node tools/encrypt-token.mjs`, depois commit de `admin/credenciais.json`.)
+
+Para trocar só a senha: dentro da área, menu **Mais → Trocar senha**.
+Se a senha vazar, revogue o token no GitHub e configure um novo.
 
 ---
 

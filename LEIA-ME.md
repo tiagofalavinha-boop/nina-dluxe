@@ -85,7 +85,7 @@ Arquivo: **[config.js](config.js)**
 Altere só a linha do número, com código do país e DDD, apenas dígitos:
 
 ```js
-whatsapp: "5565996406349",
+whatsapp: "5565996296349",
 ```
 
 O valor atual é o telefone do Tiago. Quando quiser, troque para o número da Nina.

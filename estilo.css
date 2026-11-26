@@ -272,8 +272,15 @@ footer {
 .card__foto img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 0.7rem;
   display: block;
+}
+
+.card__foto--com-foto {
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(197, 165, 114, 0.10), transparent 60%),
+    #f3eee4;
 }
 
 .card__placeholder {

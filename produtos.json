@@ -4,61 +4,61 @@
     {
       "id": "sabah-garden",
       "nome": "Sabah Garden",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sabah-garden.webp",
       "disponivel": true
     },
     {
       "id": "sabah-delilah",
       "nome": "Sabah Delilah",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sabah-delilah.webp",
       "disponivel": true
     },
     {
       "id": "sabah-valentine",
       "nome": "Sabah Valentine",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sabah-valentine.webp",
       "disponivel": true
     },
     {
       "id": "sabah-sugar",
       "nome": "Sabah Sugar",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sabah-sugar.webp",
       "disponivel": true
     },
     {
       "id": "sabah-al-ward",
       "nome": "Sabah Al Ward",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sabah-al-ward.webp",
       "disponivel": true
     },
     {
       "id": "ameerat-al-watania",
       "nome": "Ameerat Al Watania",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/ameerat-al-watania.webp",
       "disponivel": true
     },
     {
@@ -74,91 +74,91 @@
     {
       "id": "yara-trad",
       "nome": "Yara Trad",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/yara-trad.webp",
       "disponivel": true
     },
     {
       "id": "yara-moi",
       "nome": "Yara Moi",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/yara-moi.webp",
       "disponivel": true
     },
     {
       "id": "yara-tous",
       "nome": "Yara Tous",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/yara-tous.webp",
       "disponivel": true
     },
     {
       "id": "yara-candy",
       "nome": "Yara Candy",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/yara-candy.webp",
       "disponivel": true
     },
     {
       "id": "yara-elixir",
       "nome": "Yara Elixir",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/yara-elixir.webp",
       "disponivel": true
     },
     {
       "id": "emaan",
       "nome": "Emaan",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/emaan.webp",
       "disponivel": true
     },
     {
       "id": "sakeena",
       "nome": "Sakeena",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sakeena.webp",
       "disponivel": true
     },
     {
       "id": "haya",
       "nome": "Haya",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/haya.webp",
       "disponivel": true
     },
     {
       "id": "mayar-cherry",
       "nome": "Mayar Cherry",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/mayar-cherry.webp",
       "disponivel": true
     },
     {
@@ -184,81 +184,81 @@
     {
       "id": "shouq",
       "nome": "Shouq",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/shouq.webp",
       "disponivel": true
     },
     {
       "id": "athena",
       "nome": "Athena",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/athena.webp",
       "disponivel": true
     },
     {
       "id": "glacier-bella",
       "nome": "Glacier Bella",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/glacier-bella.webp",
       "disponivel": true
     },
     {
       "id": "khamrah",
       "nome": "Khamrah",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/khamrah.webp",
       "disponivel": true
     },
     {
       "id": "tharwah-silver",
       "nome": "Tharwah Silver",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/tharwah-silver.webp",
       "disponivel": true
     },
     {
       "id": "the-kingdom-masc",
       "nome": "The Kingdom (masc)",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/the-kingdom-masc.webp",
       "disponivel": true
     },
     {
       "id": "infini-oud",
       "nome": "Infini Oud",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/infini-oud.webp",
       "disponivel": true
     },
     {
       "id": "thahaani",
       "nome": "Thahaani",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/thahaani.webp",
       "disponivel": true
     },
     {
@@ -274,61 +274,61 @@
     {
       "id": "9pm",
       "nome": "9PM",
-      "marca": null,
+      "marca": "Afnan",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/9pm.webp",
       "disponivel": true
     },
     {
       "id": "9am",
       "nome": "9AM",
-      "marca": null,
+      "marca": "Afnan",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/9am.webp",
       "disponivel": true
     },
     {
       "id": "al-noble-ameer",
       "nome": "Al Noble Ameer",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/al-noble-ameer.webp",
       "disponivel": true
     },
     {
       "id": "al-noble-safeer",
       "nome": "Al Noble Safeer",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/al-noble-safeer.webp",
       "disponivel": true
     },
     {
       "id": "odyssey-homme-white",
       "nome": "Odyssey Homme White",
-      "marca": null,
+      "marca": "Armaf",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/odyssey-homme-white.webp",
       "disponivel": true
     },
     {
       "id": "glacier-pour-homme",
       "nome": "Glacier Pour Homme",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/glacier-pour-homme.webp",
       "disponivel": true
     },
     {
@@ -354,11 +354,11 @@
     {
       "id": "mayar-trad",
       "nome": "Mayar Trad",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/mayar-trad.webp",
       "disponivel": true
     },
     {
@@ -368,47 +368,47 @@
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/emeer.webp",
       "disponivel": true
     },
     {
       "id": "nebras",
       "nome": "Nebras",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/nebras.webp",
       "disponivel": true
     },
     {
       "id": "eclaire-banoffee",
       "nome": "Eclaire Banoffee",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/eclaire-banoffee.webp",
       "disponivel": true
     },
     {
       "id": "eclaire-pistache",
       "nome": "Eclaire Pistache",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/eclaire-pistache.webp",
       "disponivel": true
     },
     {
       "id": "her-confession",
       "nome": "Her Confession",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/her-confession.webp",
       "disponivel": true
     },
     {
@@ -424,41 +424,41 @@
     {
       "id": "teriaq",
       "nome": "Teriaq",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/teriaq.webp",
       "disponivel": true
     },
     {
       "id": "durrat-trad",
       "nome": "Durrat Trad",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/durrat-trad.webp",
       "disponivel": true
     },
     {
       "id": "durrat-love",
       "nome": "Durrat Love",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/durrat-love.webp",
       "disponivel": true
     },
     {
       "id": "the-kingdom-fem",
       "nome": "The Kingdom (fem)",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/the-kingdom-fem.webp",
       "disponivel": true
     },
     {
@@ -478,27 +478,27 @@
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/amber-rouge.webp",
       "disponivel": true
     },
     {
       "id": "rose-eclat",
       "nome": "Rose Eclat",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/rose-eclat.webp",
       "disponivel": true
     },
     {
       "id": "invicto",
       "nome": "Invicto",
-      "marca": null,
+      "marca": "Fragrance World",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/invicto.webp",
       "disponivel": true
     },
     {
@@ -514,81 +514,81 @@
     {
       "id": "club-de-nuit-woman",
       "nome": "Club de Nuit Woman",
-      "marca": null,
+      "marca": "Armaf",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/club-de-nuit-woman.webp",
       "disponivel": true
     },
     {
       "id": "leonie",
       "nome": "Léonie",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/leonie.webp",
       "disponivel": true
     },
     {
       "id": "historic-doria",
       "nome": "Historic Doria",
-      "marca": null,
+      "marca": "Afnan",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/historic-doria.webp",
       "disponivel": true
     },
     {
       "id": "historic-sahara",
       "nome": "Historic Sahara",
-      "marca": null,
+      "marca": "Afnan",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/historic-sahara.webp",
       "disponivel": true
     },
     {
       "id": "ajwad",
       "nome": "Ajwad",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/ajwad.webp",
       "disponivel": true
     },
     {
       "id": "souvenir-desert",
       "nome": "Souvenir Desert",
-      "marca": null,
+      "marca": "Afnan",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/souvenir-desert.webp",
       "disponivel": true
     },
     {
       "id": "souvenir-bliss",
       "nome": "Souvenir Bliss",
-      "marca": null,
+      "marca": "Afnan",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/souvenir-bliss.webp",
       "disponivel": true
     },
     {
       "id": "watani",
       "nome": "Watani",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/watani.webp",
       "disponivel": true
     },
     {
@@ -628,7 +628,7 @@
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/irtifaa-masc.webp",
       "disponivel": true
     },
     {
@@ -638,37 +638,37 @@
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/amira-fem.webp",
       "disponivel": true
     },
     {
       "id": "sugar-me-candy-floss",
       "nome": "Sugar Me Candy Floss",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sugar-me-candy-floss.webp",
       "disponivel": true
     },
     {
       "id": "sugar-me-doce-de-leite",
       "nome": "Sugar Me Doce de Leite",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sugar-me-doce-de-leite.webp",
       "disponivel": true
     },
     {
       "id": "sugar-me-marshmallow",
       "nome": "Sugar Me Marshmallow",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/sugar-me-marshmallow.webp",
       "disponivel": true
     },
     {
@@ -678,17 +678,17 @@
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/ameerat-prive-rose.webp",
       "disponivel": true
     },
     {
       "id": "ameerat-red",
       "nome": "Ameerat Red",
-      "marca": null,
+      "marca": "Asdaaf",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/ameerat-red.webp",
       "disponivel": true
     },
     {
@@ -714,11 +714,11 @@
     {
       "id": "granada",
       "nome": "Granada",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/granada.webp",
       "disponivel": true
     },
     {
@@ -734,91 +734,91 @@
     {
       "id": "fakhar-pride-rose",
       "nome": "Fakhar Pride Rose",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/fakhar-pride-rose.webp",
       "disponivel": true
     },
     {
       "id": "tharwah-gold",
       "nome": "Tharwah Gold",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/tharwah-gold.webp",
       "disponivel": true
     },
     {
       "id": "eclaire",
       "nome": "Eclaire",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/eclaire.webp",
       "disponivel": true
     },
     {
       "id": "his-confession",
       "nome": "His Confession",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/his-confession.webp",
       "disponivel": true
     },
     {
       "id": "khamrah-trad",
       "nome": "Khamrah Trad",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/khamrah-trad.webp",
       "disponivel": true
     },
     {
       "id": "fakhar-gold",
       "nome": "Fakhar Gold",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/fakhar-gold.webp",
       "disponivel": true
     },
     {
       "id": "hayaati-gold-elixir",
       "nome": "Hayaati Gold Elixir",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/hayaati-gold-elixir.webp",
       "disponivel": true
     },
     {
       "id": "attar-al-wesal",
       "nome": "Attar Al Wesal",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/attar-al-wesal.webp",
       "disponivel": true
     },
     {
       "id": "kanz-al-malik",
       "nome": "Kanz Al Malik",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/kanz-al-malik.webp",
       "disponivel": true
     },
     {
@@ -834,71 +834,71 @@
     {
       "id": "asad",
       "nome": "Asad",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/asad.webp",
       "disponivel": true
     },
     {
       "id": "salvo",
       "nome": "Salvo",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/salvo.webp",
       "disponivel": true
     },
     {
       "id": "salvo-elixir",
       "nome": "Salvo Elixir",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/salvo-elixir.webp",
       "disponivel": true
     },
     {
       "id": "asad-zanzibar",
       "nome": "Asad Zanzibar",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/asad-zanzibar.webp",
       "disponivel": true
     },
     {
       "id": "asad-zanzibar-limited",
       "nome": "Asad Zanzibar Limited",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/asad-zanzibar-limited.webp",
       "disponivel": true
     },
     {
       "id": "asad-elixir",
       "nome": "Asad Elixir",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/asad-elixir.webp",
       "disponivel": true
     },
     {
       "id": "24-carat-white-gold",
       "nome": "24 Carat White Gold",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/24-carat-white-gold.webp",
       "disponivel": true
     },
     {
@@ -944,11 +944,11 @@
     {
       "id": "pink-eclipse",
       "nome": "Pink Eclipse",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/pink-eclipse.webp",
       "disponivel": true
     },
     {
@@ -964,31 +964,31 @@
     {
       "id": "queen-of-arabia",
       "nome": "Queen of Arabia",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/queen-of-arabia.webp",
       "disponivel": true
     },
     {
       "id": "delilah",
       "nome": "Delilah",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/delilah.webp",
       "disponivel": true
     },
     {
       "id": "la-vivacite",
       "nome": "La Vivacité",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/la-vivacite.webp",
       "disponivel": true
     },
     {
@@ -1004,11 +1004,11 @@
     {
       "id": "reyna",
       "nome": "Reyna",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/reyna.webp",
       "disponivel": true
     },
     {
@@ -1024,41 +1024,41 @@
     {
       "id": "qaed-al-fursan-branco",
       "nome": "Qaed Al Fursan Branco",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/qaed-al-fursan-branco.webp",
       "disponivel": true
     },
     {
       "id": "qaed-al-fursan-marrom",
       "nome": "Qaed Al Fursan Marrom",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/qaed-al-fursan-marrom.webp",
       "disponivel": true
     },
     {
       "id": "musamam",
       "nome": "Musamam",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/musamam.webp",
       "disponivel": true
     },
     {
       "id": "victoria",
       "nome": "Victoria",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/victoria.webp",
       "disponivel": true
     },
     {
@@ -1074,11 +1074,11 @@
     {
       "id": "manaal",
       "nome": "Manaal",
-      "marca": null,
+      "marca": "Paris Corner",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/manaal.webp",
       "disponivel": true
     },
     {
@@ -1094,31 +1094,31 @@
     {
       "id": "legend-arabia",
       "nome": "Legend Arabia",
-      "marca": null,
+      "marca": "Emper",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/legend-arabia.webp",
       "disponivel": true
     },
     {
       "id": "roohi",
       "nome": "Roohi",
-      "marca": null,
+      "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/roohi.webp",
       "disponivel": true
     },
     {
       "id": "miracle-dubai",
       "nome": "Miracle Dubai",
-      "marca": null,
+      "marca": "Al Haramain",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/miracle-dubai.webp",
       "disponivel": true
     },
     {
@@ -1144,31 +1144,31 @@
     {
       "id": "bronzite",
       "nome": "Bronzite",
-      "marca": null,
+      "marca": "Maison Alhambra",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/bronzite.webp",
       "disponivel": true
     },
     {
       "id": "qimmah-gold",
       "nome": "Qimmah Gold",
-      "marca": null,
+      "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/qimmah-gold.webp",
       "disponivel": true
     },
     {
       "id": "chococult",
       "nome": "Chococult",
-      "marca": null,
+      "marca": "Paris Corner",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/chococult.webp",
       "disponivel": true
     },
     {
@@ -1244,11 +1244,11 @@
     {
       "id": "ferrari-black",
       "nome": "Ferrari Black",
-      "marca": null,
+      "marca": "Ferrari",
       "linha": null,
       "tamanhoMl": null,
       "preco": null,
-      "foto": null,
+      "foto": "fotos/ferrari-black.webp",
       "disponivel": true
     },
     {

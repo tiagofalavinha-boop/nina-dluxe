@@ -83,14 +83,16 @@
     const meta = metaPartes.length
       ? `<p class="card__meta">${metaPartes.join(" · ")}</p>`
       : "";
-    const foto = p.foto && String(p.foto).trim()
+    const temFoto = p.foto && String(p.foto).trim();
+    const foto = temFoto
       ? `<img src="${escapeHtml(String(p.foto).trim())}" alt="${escapeHtml(p.nome)}" />`
       : SVG_FRASCO;
+    const fotoClasse = temFoto ? " card__foto--com-foto" : "";
     const wa = linkWhatsApp(p.nome);
 
     return `
       <article class="card${disponivel ? "" : " is-esgotado"}">
-        <div class="card__foto">
+        <div class="card__foto${fotoClasse}">
           ${foto}
           <span class="card__selo${seloClasse}">${seloTexto}</span>
         </div>

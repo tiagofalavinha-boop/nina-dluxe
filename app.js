@@ -11,9 +11,30 @@
   const elResultado = document.getElementById("resultado");
   const elGrade = document.getElementById("grade");
   const elVazio = document.getElementById("vazio");
+  const VISTA_KEY = "nina-dluxe-vista";
 
   let produtos = [];
   let marcaAtiva = "todas";
+
+  function lerVista() {
+    try {
+      const v = localStorage.getItem(VISTA_KEY);
+      if (v === "lista" || v === "grade") return v;
+    } catch (e) {}
+    return "grade";
+  }
+
+  function aplicarVista(vista) {
+    const modo = vista === "lista" ? "lista" : "grade";
+    document.body.classList.toggle("is-lista", modo === "lista");
+    document.body.classList.toggle("is-grade", modo === "grade");
+    document.querySelectorAll(".vista__botao").forEach((btn) => {
+      const ativo = btn.getAttribute("data-vista") === modo;
+      btn.classList.toggle("is-ativo", ativo);
+      btn.setAttribute("aria-pressed", ativo ? "true" : "false");
+    });
+    try { localStorage.setItem(VISTA_KEY, modo); } catch (e) {}
+  }
 
   function linkWhatsApp(nome) {
     const texto = MENSAGEM.replaceAll("{nome}", nome || "");
@@ -102,7 +123,11 @@
           ${meta}
           ${precoHTML}
           <a class="card__pedir" href="${wa}" target="_blank" rel="noopener noreferrer">
-            Pedir no WhatsApp
+            <svg class="card__pedir-icone" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.5 2 2.02 6.48 2.02 12c0 1.77.46 3.45 1.28 4.91L2 22l5.25-1.38A9.9 9.9 0 0 0 12.04 22c5.52 0 10.02-4.48 10.02-10 0-2.65-1.05-5.15-2.99-7.09ZM12.04 20.15a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.29c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.81c0 4.54-3.7 8.15-8.23 8.15Zm4.52-6.13c-.25-.12-1.47-.72-1.7-.81-.22-.08-.39-.12-.55.12-.16.25-.63.8-.77.97-.14.16-.28.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.75-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.16 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.10-.22-.16-.47-.28Z"/>
+            </svg>
+            <span class="card__pedir-curto">Pedir</span>
+            <span class="card__pedir-longo">Pedir no WhatsApp</span>
           </a>
         </div>
       </article>`;
@@ -162,6 +187,13 @@
 
   elBusca.addEventListener("input", renderizar);
 
+  document.querySelector(".vista").addEventListener("click", (ev) => {
+    const botao = ev.target.closest("[data-vista]");
+    if (!botao) return;
+    aplicarVista(botao.getAttribute("data-vista"));
+  });
+
+  aplicarVista(lerVista());
   aplicarLinksGerais();
 
   fetch("produtos.json", { cache: "no-store" })

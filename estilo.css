@@ -1,0 +1,517 @@
+/* Nina D’luxe — vitrine pública
+   Paleta escura com dourado, pensada para celular primeiro. */
+
+:root {
+  --bg: #0c0a08;
+  --bg-elev: #161310;
+  --bg-card: #1b1713;
+  --linha: rgba(197, 165, 114, 0.28);
+  --linha-forte: rgba(197, 165, 114, 0.55);
+  --ouro: #c5a572;
+  --ouro-claro: #e8d5a3;
+  --ouro-escuro: #8a6d3b;
+  --creme: #f3ead8;
+  --creme-suave: #cfc3ae;
+  --muted: #9a8d79;
+  --esgotado: #8a7a72;
+  --ok-bg: rgba(197, 165, 114, 0.12);
+  --off-bg: rgba(138, 122, 114, 0.16);
+  --sombra: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --raio: 18px;
+  --fonte-display: "Cormorant Garamond", "Times New Roman", serif;
+  --fonte-ui: "Outfit", system-ui, sans-serif;
+  --max: 1180px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--creme);
+  font-family: var(--fonte-ui);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.bg-ornament {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(197, 165, 114, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 30% at 100% 100%, rgba(197, 165, 114, 0.05), transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cpath d='M36 2 L38.2 20.5 H57 L41.8 31.2 L47 50 L36 39.8 L25 50 L30.2 31.2 L15 20.5 H33.8 Z' fill='none' stroke='%23c5a572' stroke-width='0.6' opacity='0.09'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: auto, auto, 72px 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ----- Cabeçalho ----- */
+
+.cabecalho {
+  text-align: center;
+  padding: 2.75rem 1.25rem 1.75rem;
+}
+
+.cabecalho__selo {
+  margin: 0 0 0.7rem;
+  color: var(--ouro);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.cabecalho__marca {
+  margin: 0;
+  font-family: var(--fonte-display);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 8vw, 4.6rem);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: var(--ouro-claro);
+  text-shadow: 0 0 40px rgba(197, 165, 114, 0.18);
+}
+
+.cabecalho__ornato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 1rem 0 1.1rem;
+  color: var(--ouro);
+}
+
+.cabecalho__ornato span {
+  display: block;
+  width: min(28vw, 140px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--ouro), transparent);
+  opacity: 0.7;
+}
+
+.cabecalho__subtitulo {
+  margin: 0 auto;
+  max-width: 32rem;
+  color: var(--creme-suave);
+  font-size: 0.98rem;
+  font-weight: 300;
+}
+
+/* ----- Busca e filtros ----- */
+
+.controles {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.25rem 0.5rem;
+}
+
+.busca {
+  position: relative;
+  display: block;
+}
+
+.busca__icone {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: var(--ouro);
+  pointer-events: none;
+}
+
+.busca input {
+  width: 100%;
+  appearance: none;
+  border: 1px solid var(--linha);
+  background: rgba(22, 19, 16, 0.85);
+  color: var(--creme);
+  font-family: var(--fonte-ui);
+  font-size: 1rem;
+  padding: 0.9rem 1rem 0.9rem 2.7rem;
+  border-radius: 999px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.busca input::placeholder {
+  color: var(--muted);
+}
+
+.busca input:focus {
+  border-color: var(--linha-forte);
+  box-shadow: 0 0 0 3px rgba(197, 165, 114, 0.15);
+}
+
+.filtros {
+  margin-top: 1.1rem;
+}
+
+.filtros__rotulo {
+  margin: 0 0 0.55rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.filtros__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.filtro {
+  font-family: var(--fonte-ui);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--creme-suave);
+  background: transparent;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filtro:hover,
+.filtro:focus-visible {
+  border-color: var(--linha-forte);
+  color: var(--ouro-claro);
+  outline: none;
+}
+
+.filtro.is-ativo {
+  background: var(--ouro);
+  border-color: var(--ouro);
+  color: #1a140c;
+}
+
+.resultado {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1rem 1.25rem 0.7rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+/* ----- Grade de produtos ----- */
+
+.grade {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.25rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--linha-forte);
+}
+
+.card.is-esgotado {
+  opacity: 0.72;
+}
+
+.card__foto {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(197, 165, 114, 0.16), transparent 60%),
+    linear-gradient(180deg, #211c17 0%, #14110e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card__foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card__placeholder {
+  width: 46%;
+  max-width: 140px;
+  color: var(--ouro);
+  opacity: 0.85;
+}
+
+.card__selo {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--linha);
+  background: var(--ok-bg);
+  color: var(--ouro-claro);
+}
+
+.card__selo.is-esgotado {
+  background: var(--off-bg);
+  color: var(--esgotado);
+  border-color: rgba(138, 122, 114, 0.35);
+}
+
+.card__corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.05rem 1.15rem;
+  flex: 1;
+}
+
+.card__marca {
+  margin: 0;
+  color: var(--ouro);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.card__nome {
+  margin: 0;
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: 1.45rem;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--creme);
+}
+
+.card__meta {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.card__preco {
+  margin: 0.45rem 0 0.85rem;
+  font-family: var(--fonte-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--ouro-claro);
+}
+
+.card__preco.is-consulte {
+  font-family: var(--fonte-ui);
+  font-size: 0.86rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--creme-suave);
+}
+
+.card__pedir {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  width: 100%;
+  text-decoration: none;
+  font-family: var(--fonte-ui);
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #1a140c;
+  background: linear-gradient(180deg, #e8d5a3 0%, #c5a572 100%);
+  border: 0;
+  border-radius: 999px;
+  padding: 0.72rem 1rem;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.card__pedir:hover,
+.card__pedir:focus-visible {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.card__pedir:focus-visible {
+  box-shadow: 0 0 0 3px rgba(197, 165, 114, 0.35);
+}
+
+.card.is-esgotado .card__pedir {
+  background: transparent;
+  color: var(--creme-suave);
+  border: 1px solid var(--linha);
+  filter: none;
+}
+
+.vazio {
+  max-width: var(--max);
+  margin: 0 auto 4rem;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  color: var(--creme-suave);
+}
+
+/* ----- Rodapé e WhatsApp ----- */
+
+.rodape {
+  border-top: 1px solid var(--linha);
+  text-align: center;
+  padding: 2.5rem 1.25rem 6rem;
+}
+
+.rodape__marca {
+  margin: 0 0 0.4rem;
+  font-family: var(--fonte-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  color: var(--ouro-claro);
+}
+
+.rodape__texto {
+  margin: 0 auto 1.1rem;
+  max-width: 28rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.rodape__texto strong {
+  color: var(--creme-suave);
+  font-weight: 500;
+}
+
+.rodape__whatsapp {
+  color: var(--ouro);
+  text-decoration: none;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid transparent;
+}
+
+.rodape__whatsapp:hover,
+.rodape__whatsapp:focus-visible {
+  border-bottom-color: var(--ouro);
+  outline: none;
+}
+
+.whatsapp-flutuante {
+  position: fixed;
+  z-index: 20;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #f4fff6;
+  background: #128c4b;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.whatsapp-flutuante:hover,
+.whatsapp-flutuante:focus-visible {
+  transform: scale(1.06);
+  filter: brightness(1.08);
+  outline: none;
+}
+
+.noscript {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 1rem;
+  color: var(--creme-suave);
+}
+
+@media (min-width: 640px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .cabecalho {
+    padding-top: 3.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .grade {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grade {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card,
+  .card__pedir,
+  .whatsapp-flutuante {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}

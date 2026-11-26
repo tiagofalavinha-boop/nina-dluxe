@@ -1,0 +1,8 @@
+Coloque aqui as fotos dos produtos (JPG ou PNG).
+
+Depois, no arquivo produtos.json (na pasta principal do site),
+encontre o perfume e preencha o campo "foto", por exemplo:
+
+  "foto": "fotos/yara-trad.jpg"
+
+O nome do arquivo precisa ser exatamente o mesmo que você enviou.

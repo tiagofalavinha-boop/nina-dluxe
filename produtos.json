@@ -27,7 +27,7 @@
       "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
-      "preco": null,
+      "preco": 300,
       "foto": "fotos/sabah-valentine.webp",
       "disponivel": true
     },
@@ -37,7 +37,7 @@
       "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
-      "preco": null,
+      "preco": 250,
       "foto": "fotos/sabah-sugar.webp",
       "disponivel": true
     },
@@ -47,7 +47,7 @@
       "marca": "Al Wataniah",
       "linha": null,
       "tamanhoMl": null,
-      "preco": null,
+      "preco": 250,
       "foto": "fotos/sabah-al-ward.webp",
       "disponivel": true
     },
@@ -557,7 +557,7 @@
       "marca": "Lattafa",
       "linha": null,
       "tamanhoMl": null,
-      "preco": null,
+      "preco": 199,
       "foto": "fotos/ajwad.webp",
       "disponivel": true
     },

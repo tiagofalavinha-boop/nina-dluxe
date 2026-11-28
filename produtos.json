@@ -52,6 +52,16 @@
       "disponivel": true
     },
     {
+      "id": "nawal-bronzite",
+      "nome": "Nawal Bronzite",
+      "marca": "Al Wataniah",
+      "linha": null,
+      "tamanhoMl": 100,
+      "preco": 199,
+      "foto": "fotos/nawal-bronzite.webp",
+      "disponivel": true
+    },
+    {
       "id": "ameerat-al-watania",
       "nome": "Ameerat Al Watania",
       "marca": "Al Wataniah",
